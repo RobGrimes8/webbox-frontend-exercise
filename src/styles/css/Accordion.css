@@ -6,16 +6,20 @@
 }
 .accordion .accordionIcon {
   margin: 15px;
+  width: 10%;
 }
 .accordion .accordionIcon img {
   height: 60%;
 }
-.accordion .accordionTitle {
+.accordion .accordionContent {
+  width: 70%;
+}
+.accordion .accordionContent .accordionTitle {
   width: 60%;
   color: #707070;
   font-size: 16px;
 }
-.accordion .accordionSubtitle {
+.accordion .accordionContent .accordionSubtitle {
   color: #B0B0B0;
   font-size: 12px;
 }
@@ -33,10 +37,6 @@
 .accordion .moreButton button:hover {
   border: 1px solid #C4D446;
   color: #C4D446;
-}
-
-.accordionList {
-  list-style: none;
 }
 
 .divide.show {

@@ -1,18 +1,18 @@
-
-import './App.css';
+//STYLES
+import './styles/css/App.css';
+//COMPONENTS
 import Navbar from './components/Navbar/Navbar'
 import Card from './components/Card/Card'
 import Accordion from './components/Accordion/Accordion'
-
-import image from './assets/images/card-image.png'
+//DATA
 import accordionData from './assets/accordion.json'
-
+//IMAGES
+import image from './assets/images/card-image.png'
 import travelSVG from './assets/images/icons/dropdowns/icon-travel.svg'
 import burgerSVG from './assets/images/icons/dropdowns/icon-burger.svg'
 import clockSVG from './assets/images/icons/dropdowns/icon-clock.svg'
 import foodSVG from './assets/images/icons/dropdowns/icon-food.svg'
 import piggybankSVG from './assets/images/icons/dropdowns/icon-piggybank.svg'
-
 import FacebookSVG from './assets/images/icons/socials/facebook.svg'
 import InstagramSVG from './assets/images/icons/socials/instagram.svg'
 import LinkedinSVG from './assets/images/icons/socials/linkedin.svg'
@@ -26,6 +26,7 @@ function App() {
 
   const accordionList = accordionData.items.map((item, index) =>
     <Accordion 
+      key={index}
       title={item.title}
       subTitle={item.subTitle}
       content={item.content}
@@ -84,7 +85,7 @@ console.log(accordionData.items);
           <a href="https://www.instagram.com/webboxdigital/?hl=en">
             <img src={InstagramSVG} />
           </a>
-          <a href="https://www.youtube.com/channel/UCGBw7RNmpRMeo9oDqsF6ALQ">
+          <a href="https://youtu.be/dQw4w9WgXcQ">
             <img src={YoutubeSVG} />
           </a>
           <a href="https://www.linkedin.com/company/webbox-digital/">

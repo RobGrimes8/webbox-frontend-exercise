@@ -1,8 +1,7 @@
-import './Card.css';
-// import image from './card-image.png'
+//STYLES
+import '../../styles/css/Card.css';
 
 function Card(props) {
-
     return (
         <div className="card">
             <img src={props.imgSrc} />

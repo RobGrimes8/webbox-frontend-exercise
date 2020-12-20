@@ -6,19 +6,25 @@
 
     .accordionIcon{
         margin: 15px;
+        width: 10%;
         img{
             height: 60%;
         }
     }
-    .accordionTitle{
-        width: 60%;
-        color: #707070;
-        font-size: 16px;
+
+    .accordionContent{
+        width: 70%;
+        .accordionTitle{
+            width: 60%;
+            color: #707070;
+            font-size: 16px;
+        }
+        .accordionSubtitle{
+            color: #B0B0B0;
+            font-size: 12px; 
+        }
     }
-    .accordionSubtitle{
-        color: #B0B0B0;
-        font-size: 12px; 
-    }
+    
     .moreButton{
         font-size: 12px;
         width: 20%;
@@ -36,10 +42,6 @@
     }
 }
 
-.accordionList{
-    list-style: none;
-}
-
 .divide.show{
     border-top: 1px solid #CCCCCC;
 }
@@ -51,7 +53,6 @@
     font-size: 16px; 
     overflow: hidden;
     transition-duration: 0.2s;
-
 }
 
 .accordionExpanded.show{

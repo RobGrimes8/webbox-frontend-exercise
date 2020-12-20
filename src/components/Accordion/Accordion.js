@@ -1,12 +1,10 @@
 import { useState, useEffect } from 'react';
-import './Accordion.css';
-import icon from '../../assets/images/icons/dropdowns/icon-travel.svg';
-
+//STYLES
+import '../../styles/css/Accordion.css';
 
 function AccordionList(props) {
-
+    //Use state to show/hide the accordion text
     const [active, setActive] = useState("hide");
-
 
     return (
         <>

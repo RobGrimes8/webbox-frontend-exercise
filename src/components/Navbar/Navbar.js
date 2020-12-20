@@ -1,9 +1,7 @@
+//STYLES
+import '../../styles/css/Navbar.css'
+//IMAGES
 import logo from '../../assets/images/logo.png'
-import './Navbar.css'
-
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
 
 function Navbar() {
     return (
@@ -13,10 +11,10 @@ function Navbar() {
                 </div>
                 <div className="links">
                     <a>Home</a>
-                        <a>Links</a>
-                        <a>About</a>
-                        <a>Contact</a>
-                        <button>CTA Button</button>
+                    <a>Links</a>
+                    <a>About</a>
+                    <a>Contact</a>
+                    <button>CTA Button</button>
                 </div> 
             </nav>
     );
