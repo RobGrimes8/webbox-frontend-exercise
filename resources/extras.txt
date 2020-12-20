@@ -1,0 +1,11 @@
+Colours
+---------
+Green - #C4D446
+Light grey - #707070
+Dark grey - #B0B0B0
+Grey background - #F5F5F5
+Borders - #CCCCCC
+
+Fonts
+---------
+All copy - DM Sans (Available from Google Fonts)
