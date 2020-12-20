@@ -1,0 +1,19 @@
+.card{
+    width: 30%;
+    background-color: transparent;
+    text-align: start;
+    border: none;
+    color: #707070;
+    img{
+        width: 100%;
+        box-shadow: 0px 2px 4px rgba(0,0,0,0.18);
+    }
+    .title{
+        font-size: 16px;
+        font-weight: 700;
+        margin: 10px 0 5px;
+    }
+    .content{
+      font-size: 12px;  
+    }
+}
