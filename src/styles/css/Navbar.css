@@ -5,11 +5,11 @@
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   justify-content: space-between;
   color: #707070;
   background-color: white;
   z-index: 99;
+  display: none;
 }
 
 .logo {
@@ -41,6 +41,82 @@
   border: 1px solid #C4D446;
   color: #C4D446;
   background-color: transparent;
+}
+
+.mobileNav {
+  display: flex;
+  position: fixed;
+  transition: all 0.3s ease-in-out;
+  top: 0;
+  left: 0;
+  background-color: #F5F5F5;
+  color: #707070;
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+.mobileNav .navMenu {
+  width: 100%;
+}
+.mobileNav .navMenu .logo {
+  width: 100%;
+}
+.mobileNav .navMenu .logo img {
+  margin: 30px auto;
+}
+.mobileNav .navMenu .links {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconContainer {
+  position: fixed;
+  top: 30px;
+  left: 0px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 100;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+.iconContainer .styledBurger {
+  margin: 5px 5px 5px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 2rem;
+  height: 2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+.iconContainer .styledBurger:focus {
+  outline: none;
+}
+.iconContainer .styledBurger div {
+  width: 2rem;
+  height: 0.25rem;
+  background: #C4D446;
+  border-radius: 10px;
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+
+  .iconContainer {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=Navbar.css.map */

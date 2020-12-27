@@ -16,3 +16,7 @@ I have kept the source code of my scss code available in './src/styles/scss' fol
 Importing json instead of ajax
 ---------
 A downside that I discovered while using react was the inability to perform a local Ajax request. I instead had to import the JSON file and use the data that way.  This meant that the method of displaying the icons for each item of the accordion had to be changed slightly. This is something I would address if I was to repeat this project or something similar.
+
+Responsive Design
+---------
+I built the webpage as a mobile first site and used media queries to change the css if the screen being used was larger than a tablet (768px or lager). I often use bootstrap for this purpose to save time but I wanted to code it myself in this example.

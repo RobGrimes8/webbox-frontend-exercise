@@ -2,8 +2,10 @@
 import './styles/css/App.css';
 //COMPONENTS
 import Navbar from './components/Navbar/Navbar'
+import MobileNav from './components/MobileNav/MobileNav'
 import Card from './components/Card/Card'
 import Accordion from './components/Accordion/Accordion'
+import Footer from './components/Footer/Footer'
 //DATA
 import accordionData from './assets/accordion.json'
 //IMAGES
@@ -13,11 +15,6 @@ import burgerSVG from './assets/images/icons/dropdowns/icon-burger.svg'
 import clockSVG from './assets/images/icons/dropdowns/icon-clock.svg'
 import foodSVG from './assets/images/icons/dropdowns/icon-food.svg'
 import piggybankSVG from './assets/images/icons/dropdowns/icon-piggybank.svg'
-import FacebookSVG from './assets/images/icons/socials/facebook.svg'
-import InstagramSVG from './assets/images/icons/socials/instagram.svg'
-import LinkedinSVG from './assets/images/icons/socials/linkedin.svg'
-import TwitterSVG from './assets/images/icons/socials/twitter.svg'
-import YoutubeSVG from './assets/images/icons/socials/youtube.svg'
 
 
 function App() {
@@ -35,10 +32,9 @@ function App() {
     />
   );
   
-console.log(accordionData.items);
-
   return (
     <div className="App">
+      <MobileNav />
       <Navbar />
       <section className="hero">
         <h1>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h1>
@@ -68,31 +64,7 @@ console.log(accordionData.items);
         <p className="subtitle">Accordions</p>
         {accordionList}
       </section>  
-      <footer>
-        <div className="copyright">
-          <p>© Copyright 2020 WebBox.</p>
-        </div>
-        <div className="title">
-          <p>WebBox Front-end Developer Exercise</p>
-        </div>
-        <div className="socials">
-          <a href="https://en-gb.facebook.com/webboxdigital/">
-            <img src={FacebookSVG} />
-          </a>
-          <a href="https://twitter.com/webboxdigital?lang=en">
-            <img src={TwitterSVG} />
-          </a>
-          <a href="https://www.instagram.com/webboxdigital/?hl=en">
-            <img src={InstagramSVG} />
-          </a>
-          <a href="https://youtu.be/dQw4w9WgXcQ">
-            <img src={YoutubeSVG} />
-          </a>
-          <a href="https://www.linkedin.com/company/webbox-digital/">
-            <img src={LinkedinSVG} />
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

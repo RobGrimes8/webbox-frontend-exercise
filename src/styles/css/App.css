@@ -4,9 +4,8 @@
 }
 
 .hero {
-  padding: 0 15vw;
+  padding: 50px 15vw;
   height: 50vh;
-  padding-top: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +27,7 @@
 }
 .cards .cardParent {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
@@ -39,20 +39,6 @@
 
 .accordions {
   padding: 60px 15vw;
-}
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  font-size: 10px;
-  padding: 40px 0;
-  border-top: 1px solid #CCCCCC;
-  margin: 0 100px;
-  color: #707070;
-}
-footer img {
-  height: 15px;
-  margin: 0 10px;
 }
 
 /*# sourceMappingURL=App.css.map */
