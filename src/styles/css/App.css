@@ -3,9 +3,19 @@
   font-family: "DM Sans", sans-serif;
 }
 
+section {
+  padding: 60px 15vw;
+}
+
+.subtitle {
+  color: #707070;
+  text-align: center;
+  font-size: 32px;
+}
+
 .hero {
-  padding: 50px 15vw;
-  height: 50vh;
+  padding: 0px 15vw;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +32,6 @@
 }
 
 .cards {
-  padding: 60px 15vw;
   background-color: #F5F5F5;
 }
 .cards .cardParent {
@@ -31,14 +40,11 @@
   justify-content: space-evenly;
 }
 
-.subtitle {
-  color: #707070;
-  text-align: center;
-  font-size: 32px;
-}
-
-.accordions {
-  padding: 60px 15vw;
+@media (min-width: 768px) {
+  .hero {
+    padding: 100px 15vw;
+    height: fit-content;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */

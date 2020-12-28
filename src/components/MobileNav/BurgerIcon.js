@@ -1,3 +1,4 @@
+//STYLES
 import '../../styles/css/Navbar.css'
 
 function BurgerIcon(props) {

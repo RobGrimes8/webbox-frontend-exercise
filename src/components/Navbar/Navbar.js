@@ -7,13 +7,13 @@ function Navbar() {
     return (
             <nav className="nav">
                 <div className="logo">
-                    <img src={logo} />
+                    <img src={logo} alt="WebBox Logo" />
                 </div>
                 <div className="links">
-                    <a>Home</a>
-                    <a>Links</a>
-                    <a>About</a>
-                    <a>Contact</a>
+                    <a href="javascript:;">Home</a>
+                    <a href="javascript:;">Links</a>
+                    <a href="javascript:;">About</a>
+                    <a href="javascript:;">Contact</a>
                     <button>CTA Button</button>
                 </div> 
             </nav>

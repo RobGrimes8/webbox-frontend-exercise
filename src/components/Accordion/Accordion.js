@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 //STYLES
 import '../../styles/css/Accordion.css';
 
@@ -10,7 +10,7 @@ function AccordionList(props) {
         <>
             <div className="accordion">
                 <div className="accordionIcon">
-                    <img width="70" src={props.icon} />
+                    <img width="70" src={props.icon} alt="Accordion Icon" />
                 </div>
                 <div className="accordionContent">
                     <p className="accordionTitle">
