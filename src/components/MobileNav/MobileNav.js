@@ -30,10 +30,10 @@ class MobileNav extends Component {
                             <img src={logo} alt="WebBox Logo" />
                         </div>
                         <div className="links">
-                            <a href="javascript:;">Home</a>
-                            <a href="javascript:;">Links</a>
-                            <a href="javascript:;">About</a>
-                            <a href="javascript:;">Contact</a>
+                            <a href="#">Home</a>
+                            <a href="#">Links</a>
+                            <a href="#">About</a>
+                            <a href="#">Contact</a>
                             <button>CTA Button</button>
                         </div> 
                     </div>
