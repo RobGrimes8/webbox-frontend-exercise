@@ -1,7 +1,7 @@
 IMPORTANT POINTS
 ================
-*The './app/' directory was renamed as './public/' to help with React*
-*The webpage is still accessible by running 'npm start' but the default port is now __3000__*
+* The './app/' directory was renamed as './public/' to help with React.
+* The webpage is still accessible by running 'npm start' but the default port is now __3000__
 
 
 React Use
@@ -11,7 +11,7 @@ Even though it was not a requirement to use a single page framework for this exe
 
 Bootstrap use
 -------------
-Originally I was going to use bootstrap for its flex class properties and for responsiveness classes as I would in a personal project but I decided to create the classes instead to improve on file size.
+Originally I was going to use bootstrap for its flex class properties and for responsiveness classes as I would in a personal project but I decided to create the classes instead to improve on file size. No boostrap was used in this project.
 
 
 Scss files
