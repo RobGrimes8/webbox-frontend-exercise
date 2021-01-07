@@ -1,3 +1,5 @@
+//REACT 
+import { useState, useEffect } from 'react'
 //STYLES
 import './styles/css/App.css';
 //COMPONENTS
@@ -6,8 +8,6 @@ import MobileNav from './components/MobileNav/MobileNav'
 import Card from './components/Card/Card'
 import Accordion from './components/Accordion/Accordion'
 import Footer from './components/Footer/Footer'
-//DATA
-import accordionData from './assets/accordion.json'
 //IMAGES
 import cardImage from './assets/images/card-image.png'
 import travelSVG from './assets/images/icons/dropdowns/icon-travel.svg'
@@ -19,18 +19,32 @@ import piggybankSVG from './assets/images/icons/dropdowns/icon-piggybank.svg'
 
 export default function App() {
 
-  const iconList = [travelSVG, piggybankSVG, clockSVG, burgerSVG, foodSVG]
+  const [accordionData, setaccordionData] = useState([]);
 
-  const accordionList = accordionData.items.map((item, index) =>
-    <Accordion 
-      key={index}
-      title={item.title}
-      subTitle={item.subTitle}
-      content={item.content}
-      buttonText={item.buttonText}
-      icon={iconList[index]}
-    />
-  );
+  const getData = () => {
+    fetch('accordion.json',{
+         headers : { 
+           'Content-Type': 'application/json',
+           'Accept': 'application/json'
+          }
+        }
+       )
+        .then(function(response){
+           console.log(response)
+           return response.json();
+         })
+          .then(function(myJson) {
+            setaccordionData(myJson)
+             console.log(myJson);
+             console.log(accordionData);
+           });
+     }
+
+     useEffect(()=>{
+      getData()
+    },[])
+
+  const iconList = [travelSVG, piggybankSVG, clockSVG, burgerSVG, foodSVG]
   
   return (
     <div className="App">
@@ -62,7 +76,19 @@ export default function App() {
       </section>
       <section className="accordions">
         <p className="subtitle">Accordions</p>
-        {accordionList}
+        {
+          accordionData.items && accordionData.items.length>0 && accordionData.items.map((item, index) =>
+            <Accordion 
+              key={index}
+              title={item.title}
+              subTitle={item.subTitle}
+              content={item.content}
+              buttonText={item.buttonText}
+              icon={iconList[index]}
+            />
+          )
+        }
+
       </section>  
       <Footer />
     </div>
